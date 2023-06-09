@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--父模板-->
+    <bean id="root" abstract="true">
+        <property name="color" value="白色"/>
+        <property name="source" value="牛"/>
+    </bean>
+    <!--子模板继承父模板-->
+    <bean id="yili" class="com.example.demo.entity.Mike" parent="root">
+        <property name="country" value="中国"/>
+    </bean>
+    <!--子模板继承父模板-->
+    <bean id="quecao" class="com.example.demo.entity.Mike" parent="root">
+        <property name="country" value="美国"/>
+    </bean>
+</beans>

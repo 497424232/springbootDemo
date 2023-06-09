@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.demo.test.beanPostProcessor;
 
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.BeanDefinitionBuilder;

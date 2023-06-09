@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.example.demo.test.beanPostProcessor.User" init-method="initMethod"/>
-
+    <bean id="book" class="com.example.demo.entity.Book">
+        <property name="bookName" value="钢铁是怎样炼成的"/>
+        <property name="author" value="尼古拉·奥斯特洛夫斯基"/>
+    </bean>
 </beans>

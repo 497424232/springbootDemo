@@ -1,4 +1,4 @@
-package com.example.demo.test;
+package com.example.demo.test.beanPostProcessor;
 
 import lombok.Data;
 import org.springframework.beans.BeansException;
@@ -24,6 +24,7 @@ public class BeanPostProcessorDemo {
         System.out.println(user);
     }
 }
+
 @Data
 class User{
     private String userName;
@@ -36,6 +37,7 @@ class User{
         this.setAge(18);
     }
 }
+
 class UserBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

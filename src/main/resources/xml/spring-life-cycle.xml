@@ -3,6 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="user" class="com.example.demo.test.beanPostProcessor.User" init-method="initMethod"/>
-
+    <bean name="user" class="com.example.demo.test.springBean.User" init-method="initMethod">
+        <property name="userName" value="tom"/>
+        <property name="age" value="18"/>
+    </bean>
 </beans>
