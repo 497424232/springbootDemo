@@ -6,7 +6,13 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
 
 /**
+ *一般情况下，Spring是通过反射机制利用Bean的Class属性指定实现类来实例化Class。
+ * 但是在某些情况下，实例化Bean过程比较复杂，传统的方式就不太适合用来实例化Bean。
+ * 所以Spring提供了FactoryBean这么一个接口，可以通过该接口实现定制实例化Bean的逻辑
  *
+ * 作者：一个菜鸟JAVA
+ * 链接：https://www.jianshu.com/p/cbf92e66f61e
+ * 来源：简书
  *
  *
  * @author changmk

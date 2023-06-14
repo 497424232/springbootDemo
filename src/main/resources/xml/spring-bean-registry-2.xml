@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="e" class="com.example.demo.test.cycleRefrence.E">
+        <property name="f" ref="f"/>
+    </bean>
+    <bean id="f" class="com.example.demo.test.cycleRefrence.F">
+        <property name="e" ref="e"/>
+    </bean>
+</beans>
